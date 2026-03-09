@@ -31,6 +31,12 @@ font-family: "Montserrat", sans-serif;
     width: var(--container);
     margin: 0 auto;
 }
+main > section {
+    padding: 90px 0;
+}
+.text_center {
+    text-align: center;
+}
 
 /* 폰트 */
 body {
@@ -40,6 +46,18 @@ body {
     font-family: "Poppins", sans-serif;*/
     font: var(--fz)/var(--lh) "Poppins", sans-serif;
     color: var(--txt-color);
+}
+section .sec_sub_tt {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+section .sec_tt {
+    font-family: "Volkhov", serif;
+    font-size: 50px;
+    line-height: 65px;
+    color: #14183E;
+    margin-bottom: 60px;
 }
 
 /* 링크 버튼 */
@@ -217,4 +235,71 @@ header .content .desc p {
     box-shadow: 0 15px 30px rgba(223, 105, 82, .30);
     border-radius: 50%;
     color: var(--white);
+}
+
+/* services */
+.services > div {
+    position: relative;
+}
+.services > div:after {
+    content: '';
+    position: absolute;
+    width: 153px;
+    height: 166px;
+    background: url(../images/services_right_top.svg) no-repeat;
+    right: -75px;
+    top: 0;
+}
+.services_list {
+    display: flex;
+    justify-content: space-between;
+}
+.services_list li {
+    width: 267px;
+    padding: 0 42px 45px;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--white);
+    border-radius: 36px;
+    transition: .3s;
+    position: relative;
+}
+.services_list li:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #DF6951;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 30px 0 10px 0;
+    z-index: -1;
+    transition: .3s;
+}
+.services_list li figure {
+    height: 154px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services_list li h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 15px;
+    color: #1E1D4C;
+    white-space: nowrap;
+}
+.services_list li:hover {
+    box-shadow:
+    0 1.85px 3.15px rgb(0, 0, 0, .048),
+    0 8.15px 6.52px rgb(0, 0, 0, .079),
+    0 20px 13px rgb(0, 0, 0, .01),
+    0 38.52px 25.48px rgb(0, 0, 0, .0121),
+    0 64.81px 46.85px rgb(0, 0, 0, .0152),
+    0 100px 80px rgb(0, 0, 0, .02);
+}
+.services_list li:hover:after {
+    transform: translate(-42px, 42px);
 }
