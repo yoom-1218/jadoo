@@ -354,3 +354,179 @@ header .content .desc p {
 .destinations_list p i {
     color: #000;
 }
+
+/*book_a_trip*/
+.book_a_trip {
+    display: flex;
+    justify-content: space-between;
+    background: url('../images/book_bg.svg') right top no-repeat;
+}
+.book_a_trip .content {
+    width: 511px;
+}
+.book_a_trip .sec_tt {
+    margin-bottom: 31px;
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.steps li {
+    display: flex;
+    gap: 20px;
+}
+.steps li:nth-child(1) .icon{
+    background: #F0BB1F;
+}
+.steps li:nth-child(2) .icon{
+    background: #F15A2B;
+}
+.steps li:nth-child(3) .icon{
+    background: #006380;
+}
+.steps .icon {
+    width: 47px;
+    height: 48px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.steps .desc {
+    width: 327px;
+}
+.steps .desc h4 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.steps .desc p {
+    line-height: 1.24;
+}
+.pic_of_month {
+    margin-top: 80px;
+    position: relative;
+    height: 400px;
+}
+.pic_of_month .detail {
+    padding: 20px 24px 30px;
+    background: var(--white);
+    border-radius: 26px;
+    box-shadow: 
+    0 100px 80px  0 rgb(0, 0, 0, .02),
+    0 64.815px 46.852px 0 rgb(0, 0, 0, .02),
+    0 38.519px 25.481px 0 rgb(0, 0, 0, .01),
+    0 20px 13px 0 rgb(0, 0, 0, .01),
+    0 8.148px 6.519px 0 rgb(0, 0, 0, .01),
+    0 1.852px 3.148px 0 rgb(0, 0, 0, .00);
+}
+.pic_of_month .detail img {
+    margin-bottom: 20px;
+}
+.pic_of_month .detail h4 {
+    font-size: 18px;
+    line-height: 1.24;
+    color: #080809;
+    font-weight: 500;
+    margin-bottom: 13px;
+    letter-spacing: 0.015em;
+}
+.pic_of_month .detail p {
+    padding: 2px 0;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    color: #84829A;
+}
+.pic_of_month .detail .date {
+    display: inline-block;
+    border-right: 1px solid #84829A;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+.pic_of_month .detail ul {
+    display: flex;
+    gap: 18px;
+    margin: 20px 0 30px;
+}
+.pic_of_month .detail ul li {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.pic_of_month .detail ul li a {
+    color: #84829A;
+}
+.pic_of_month .people {
+    display: flex;
+    justify-content: space-between;
+}
+.pic_of_month .people .fa-regular {
+    color: #4152CA;
+}
+.pic_of_month .ongoing {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 20px 25px 22px 18px;
+    background: var(--white);
+    border-radius: 18px;
+    position: absolute;
+    left: 217px;
+    bottom: 52px;
+    box-shadow: 
+    0 100px 80px  0 rgb(0, 0, 0, .02),
+    0 64.815px 46.852px 0 rgb(0, 0, 0, .02),
+    0 38.519px 25.481px 0 rgb(0, 0, 0, .01),
+    0 20px 13px 0 rgb(0, 0, 0, .01),
+    0 8.148px 6.519px 0 rgb(0, 0, 0, .01),
+    0 1.852px 3.148px 0 rgb(0, 0, 0, .00);
+}
+.pic_of_month .ongoing h5 {
+    font-size: 14px;
+    line-height: 1.24;
+    color: #84829A;
+    margin-bottom: 6px;
+}
+.pic_of_month .ongoing h4 {
+    font-size: 18px;
+    line-height: 1.24;
+    color: #080809;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    margin-bottom: 14px;
+}
+.pic_of_month .ongoing p {
+    font-size: 14px;
+    line-height: 1.24;
+    letter-spacing: -0.055em;
+    font-weight: 500;
+    color: #080809;
+}
+.ongoing p .percent {
+    color: #8A79DF;
+    margin-right: 4px;
+}
+.progress_bar {
+    position: relative;
+    width: 156px;
+    height: 5px;
+    background: #F5F5F5;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.progress_bar .bar {
+    position: absolute;
+    width: 73px;
+    height: 5px;
+    border-radius: 20px;
+    background: #8A79DF;
+    left: 0;
+    top: 0;
+}
